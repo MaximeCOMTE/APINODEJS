@@ -74,13 +74,13 @@ function fonction5 (notes){
         return strings[numeroIndex];
     }
 
-console.log(fonction1(numbers))
-console.log(fonction2(jours))
-console.log(fonction3(numbers2))
-console.log(fonction4(fruits))
-console.log(fonction5(notes))
-//console.log(fonction6(oiseaux))
-console.log(fonction7(paysliste))
-console.log(fonction8(mois))
-console.log(fonction9(listenombrerand))
-console.log(fonction10(strings))
+console.log(fonction1(numbers));
+console.log(fonction2(jours));
+console.log(fonction3(numbers2));
+console.log(fonction4(fruits));
+console.log(fonction5(notes));
+//console.log(fonction6(oiseaux));
+console.log(fonction7(paysliste));
+console.log(fonction8(mois));
+console.log(fonction9(listenombrerand));
+console.log(fonction10(strings));

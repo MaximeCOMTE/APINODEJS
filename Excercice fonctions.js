@@ -11,13 +11,22 @@ String2 = "TypeScript"
 let strings = [String1,String2];
 //5
 var numberToWords = require('number-to-words');
+//8
+String3 = "bonjour je suis Maxime";
+const voyellesMaj = String3.replace(/[aeiouy]/gi,function (match) {
+    return match.toLocaleUpperCase();
+});
+//9
+const comptage = String3.replace(/[^aeiouy]/gi, "").length;
+//10
+const consonneMaj = String3.replace(/[bcdfghjklmnpqrstvwxs]/gi, function (match) {
+    return match.toLocaleUpperCase();
+});
 
 
 
 
-
-
-function fonction1 (var1,var2){
+    function fonction1 (var1,var2){
     return var1+var2;
 }
 function fonction2 (numbers){
@@ -43,12 +52,17 @@ function fonction7(...numbers){
     return numbers;
 }
 
-function fonction8(String2){
-    //return String2.replace(/[aeiouy]/gi, /[aeiouy]/gi.toUpperCase());
-    return 0
+function fonction8(String3){
+    return voyellesMaj;
 }
 
+function fonction9(String3){
+        return comptage;
+}
 
+function fonction10(String3){
+        return consonneMaj
+}
 
 
 
@@ -57,6 +71,9 @@ console.log(fonction2(numbers));
 console.log(fonction3(String1));
 console.log(fonction4(strings));
 console.log(fonction5(var1));
-console.log(fonction7(numbers))
-console.log(fonction8(String2))
+console.log(fonction7(numbers));
+console.log(fonction8(String3));
+console.log(fonction9(String3));
+console.log(fonction10(String3));
+
 
